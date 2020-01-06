@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=ABeeZee&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  height: 50vh;
+  width: 28.125vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.screen {
+  grid-column: 1/5;
+  grid-row: 1/3;
+}
+
+.zero {
+  grid-column: 1/3;
+}
+
+.equals {
+  grid-column: 4/5;
+  grid-row: 6/8;
+}
+
+.action, .screen {
+  color: #fff;
+  border-radius: 3.3571428571vh;
+  margin: 0.5vh;
+}
+.action p, .screen p {
+  border-radius: 3.3571428571vh;
+  font-size: 3vh;
+  font-family: "ABeeZee", sans-serif;
+  width: 6.7142857143vh;
+  height: 6.7142857143vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.comma, .zero, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine {
+  background-color: #444;
+}
+
+.equals, .plus, .minus, .multiply, .divide {
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clear, .backspace {
+  color: #000;
+  background-color: #c4c4c4;
+}
+
+.screen {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.screen p {
+  font-size: 5vh;
+  width: 100%;
+  padding: 0 1vh;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.zero .number {
+  width: 100% !important;
+  justify-content: flex-start;
+  padding-left: 2.5vh;
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
