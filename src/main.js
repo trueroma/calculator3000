@@ -1,7 +1,7 @@
 const screen = document.querySelector('.screen p');
 let fstNum = '', secNum = '', whichNum = 1, current = 0, operation = '', clearInsert = true;
 
-screenUsualizer = () => {
+const screenUsualizer = () => {
   screen.style.overflow = 'hidden';
   screen.style.justifyContent = 'flex-end';
 }
@@ -81,7 +81,7 @@ const insertComma = () => {
 }
 
 const plus = () => {
-  if (whichNum === 2) {
+  if (whichNum === 2 && secNum.length && secNum !== '0') {
     equals();
     whichNum = 2;
     operation = '+';
@@ -93,7 +93,7 @@ const plus = () => {
   lengthChecker();
 }
 const minus = () => {
-  if (whichNum === 2) {
+  if (whichNum === 2 && secNum.length && secNum !== '0') {
     equals();
     whichNum = 2;
     operation = '-';
@@ -105,7 +105,7 @@ const minus = () => {
   lengthChecker();
 }
 const multiply = () => {
-  if (whichNum === 2) {
+  if (whichNum === 2 && secNum.length && secNum !== '0') {
     equals();
     whichNum = 2;
     operation = 'x';
@@ -117,7 +117,7 @@ const multiply = () => {
   lengthChecker();
 }
 const divide = () => {
-  if (whichNum === 2) {
+  if (whichNum === 2 && secNum.length && secNum !== '0') {
     equals();
     whichNum = 2;
     operation = '/';

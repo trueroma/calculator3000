@@ -8,7 +8,7 @@ var fstNum = '',
     operation = '',
     clearInsert = true;
 
-screenUsualizer = function screenUsualizer() {
+var screenUsualizer = function screenUsualizer() {
   screen.style.overflow = 'hidden';
   screen.style.justifyContent = 'flex-end';
 };
@@ -88,7 +88,7 @@ var insertComma = function insertComma() {
 };
 
 var plus = function plus() {
-  if (whichNum === 2) {
+  if (whichNum === 2 && secNum.length && secNum !== '0') {
     equals();
     whichNum = 2;
     operation = '+';
@@ -100,7 +100,7 @@ var plus = function plus() {
   lengthChecker();
 };
 var minus = function minus() {
-  if (whichNum === 2) {
+  if (whichNum === 2 && secNum.length && secNum !== '0') {
     equals();
     whichNum = 2;
     operation = '-';
@@ -112,7 +112,7 @@ var minus = function minus() {
   lengthChecker();
 };
 var multiply = function multiply() {
-  if (whichNum === 2) {
+  if (whichNum === 2 && secNum.length && secNum !== '0') {
     equals();
     whichNum = 2;
     operation = 'x';
@@ -124,7 +124,7 @@ var multiply = function multiply() {
   lengthChecker();
 };
 var divide = function divide() {
-  if (whichNum === 2) {
+  if (whichNum === 2 && secNum.length && secNum !== '0') {
     equals();
     whichNum = 2;
     operation = '/';
